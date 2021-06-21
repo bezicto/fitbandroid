@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.kasyrani.fitb</id>
+    <name>fitb</name>
+    <version>1.2.0</version>
+    <publisher>Kasyrani.com</publisher>
+    <url>http://kasyrani.wordpress.com</url>
+    <description>Fill in the blanks</description>
+    <copyright>2016 by Kas Asyrani</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>true</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>44be93a7-c3ed-4114-9555-67cce94d4428</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="120" android:versionName="1.2.0">
+            <application android:theme="@style/Theme.NoActionBar">
+                <activity android:configChanges="keyboardHidden"
+                    android:label="fitb" android:name=".fitbActivity" android:screenOrientation="portrait">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                    </intent-filter>
+                </activity>
+                <activity android:configChanges="keyboardHidden"
+                    android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
+                <activity android:configChanges="keyboardHidden"
+                    android:name="org.appcelerator.titanium.TiTranslucentActivity" android:screenOrientation="portrait"/>
+            </application>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules/>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">false</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>3.5.1.GA</sdk-version>
+    <property name="appc-app-id" type="string">5587864e8eca0801212416dc</property>
+</ti:app>
